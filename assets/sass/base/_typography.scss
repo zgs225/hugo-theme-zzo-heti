@@ -9,13 +9,18 @@ html {
 }
 
 body {
-  font: normal 125% / 1.4 $text-font-stack;
+  font: normal 125% / 1.5 $text-font-stack;
 }
 
 code,
 pre {
   font: normal 125% / 1.8 $code-font-stack;
 }
+
+blockquote {
+  font-family: $font-family-kai;
+}
+
 
 .h1 {
   font-size: 4rem;

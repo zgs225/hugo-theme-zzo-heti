@@ -33,6 +33,7 @@ $cursive-font: {{ .Site.Data.font.cursive_font }};
 
 $viewport_size: {{ .Site.Params.viewportSize | default "normal" }};
 
+@import 'heti/font';
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 @import 'abstracts/functions';
