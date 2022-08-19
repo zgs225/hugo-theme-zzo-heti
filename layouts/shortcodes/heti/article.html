@@ -1,4 +1,4 @@
-<div class="heti heti--ancient">
+<div class="heti heti--ancient {{ if eq (.Get "annotation") "on" }}heti--annotation{{ end }}">
     {{ with .Get "title" }}<h2>{{ . }}</h2>{{ end }}
     {{- with $.Get "author" }}
     <p class="heti-meta heti-small">
@@ -12,5 +12,5 @@
         {{ end }}
     </p>
     {{- end }}
-    {{ .Inner | markdownify }}
+    {{- .Inner | markdownify -}}
 </div>

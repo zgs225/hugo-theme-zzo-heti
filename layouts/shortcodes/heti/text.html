@@ -1,0 +1,17 @@
+{{- with .Get "deco" -}}
+{{ $deco := . }}
+{{ $content := $.Get "content" }}
+{{- if eq $deco "abbr" }}<abbr title="{{ $content }}">{{ $.Inner }}</abbr>{{ end -}}
+{{- if eq $deco "mark" }}<mark>{{ $.Inner }}</mark>{{ end -}}
+{{- if eq $deco "u" }}<u {{ with $content }}title="{{ . }}"{{ end }}>{{ $.Inner }}</u>{{ end -}}
+{{- if eq $deco "em" }}<em>{{ $.Inner }}</em>{{ end -}}
+{{- if eq $deco "del" }}<del>{{ $.Inner }}</del>{{ end -}}
+{{- if eq $deco "ins" }}<ins>{{ $.Inner }}</ins>{{ end -}}
+{{- if eq $deco "q" }}<q>{{ $.Inner }}</q>{{ end -}}
+{{- if eq $deco "dfn" }}<dfn>{{ $.Inner }}</dfn>{{ end -}}
+{{- if eq $deco "ruby" }}<ruby>{{ $.Inner }}<rp>（</rp><rt>{{ $content }}</rt><rp></rp></ruby>{{ end -}}
+{{- if eq $deco "sup" }}<sup>{{ $.Inner }}</sup>{{ end -}}
+{{- if eq $deco "sub" }}<sub>{{ $.Inner }}</sub>{{ end -}}
+{{- else -}}
+{{ .Inner }}
+{{- end -}}
