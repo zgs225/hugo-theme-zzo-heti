@@ -1,4 +1,4 @@
-<div class="heti heti--poetry">
+<div class="heti heti--poetry {{ if eq (.Get "annotation") "on" }}heti--annotation{{ end }}">
     {{ with .Get "title" }}
     <h2>{{ . }}
         {{- with $.Get "author" }}

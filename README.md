@@ -15,6 +15,9 @@
 | title | String | 诗词标题 |
 | author | String | 作者 |
 | abbr | String | 关于作者的说明，例如字、号 |
+| annotation | Boolean | 开启注解模式 |
+
+* Boolean 类型的值请用 "on", "off" 表示
 
 #### 示例
 
@@ -45,8 +48,6 @@
 | author | String | 作者 |
 | abbr | String | 关于作者的说明，例如字、号 |
 | annotation | Boolean | 文章开启注解模式 |
-
-* Boolean 类型的值请用 "on", "off" 表示
 
 #### 示例
 
