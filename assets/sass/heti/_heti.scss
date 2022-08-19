@@ -35,6 +35,9 @@
   word-wrap: break-word;
   hyphens: auto;
 
+  // 正文中用于居中内容
+  margin: 0 auto;
+
   // 自动在中西文间加 1/4 空格（暂无浏览器支持）
   //text-spacing: ideograph-alpha;
 

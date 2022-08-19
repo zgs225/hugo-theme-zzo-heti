@@ -32,3 +32,28 @@
 效果如下：
 
 ![](./images/heti-poetry-screenshot.png)
+
+### {{< heti/article >}}
+
+用于显示古文。
+
+#### 参数列表
+
+| 名称 | 类型 | 说明 |
+| ---- | ---- | ---- |
+| title | String | 古文标题 |
+| author | String | 作者 |
+| abbr | String | 关于作者的说明，例如字、号 |
+
+#### 示例
+
+代码：
+
+``` html
+{{< heti/article title="出师表" author="[蜀]诸葛亮" abbr="字孔明" >}}
+{{< /heti/article >}}
+```
+
+效果如下：
+
+![](./images/heti-article-screenshot.png)
